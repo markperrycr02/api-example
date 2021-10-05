@@ -1,0 +1,20 @@
+GET http://localhost:3000/subscribers
+###
+GET http://localhost:3000/subscribers/615c663f77f020c8b0a079b1
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Mark Perry", "subscribedToChannel":"YouTube"
+}
+###
+DELETE http://localhost:3000/subscribers/615c73265507f12855bcd66b
+
+###
+PATCH http://localhost:3000/subscribers/615c78eb5be8f996e59bd4d8
+Content-Type: application/json
+
+{
+    "name": "Karen Perry", "subscribedToChannel":"Lifetime Channel"
+}
